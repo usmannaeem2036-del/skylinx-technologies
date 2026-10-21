@@ -82,7 +82,7 @@ def signup():
         if lastname and not lastname.replace(" ", "").isalpha():
             return render_template('signup.html', message='❌ Last Name must contain only alphabets')
 
-        email_regex = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+        email_regex = r'^[\w\.-]+@gmail\.com$'
         if not email or not re.match(email_regex, email):
             return render_template('signup.html', message='❌ Enter a valid Email address')
 
