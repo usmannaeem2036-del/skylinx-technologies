@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style-log.css') }}">
+</head>
+<body class="body">
+  <form method="POST" action="/login">
+  <div class="container">
+    <h2 class="log">Login</h2>
+
+      {% if message %}
+        <p style="color: #d9534f; text-align: center; font-weight: bold; margin-bottom: 15px; background: #ffe6e6; padding: 8px; border-radius: 4px;">{{ message }}</p>
+      {% endif %}
+      
+    <div class="data">
+      <label class="data"s>Gmail:</label>
+      <input class="mail" type="email" name="email" placeholder="Enter your email" required>
+      <i class="fa fa-envelope"></i>
+    </div>
+    
+    <div class="data-pass">
+      <label class="data">Password:</label>
+      <input class="mail"  type="password" name="password" placeholder="Enter your password" required>
+      <i class="fa fa-eye"></i>
+    </div>
+      
+    <a href="/forget" class="forget">Forget</a>
+    
+    <button type="submit" class="login-button">Login</button>
+    
+    <p style="text-align: center; font-size: 14px;">
+      Don't have an account? <a href="/signup" style="color: rgb(75, 75, 212); text-decoration: none; font-weight: bold;">Signup Now</a>
+    </p>
+  </div>
+  </form>
+</body>
+</html>

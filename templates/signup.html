@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signup page</title>
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="body">
+  <form method="POST" action="/signup">
+  <div class="container">
+      <h1 class="head">
+         Sign Up
+        </h1>
+      {% if message %}
+        <p style="color: #d9534f; text-align: center; font-weight: bold; margin-bottom: 10px;">{{ message }}</p>
+      {% endif %}
+      
+    <div class="data">
+      <label class="label">User name:</label>
+      <input class="search-bar" type="text" name="username" id="username" placeholder="Enter User name" required>
+      <i class="fa fa-user"></i>
+    </div>
+     <div class="data">
+      <label class="label">First name:</label>
+      <input class="search-bar" type="text" name="firstname" id="firstname" placeholder="Enter First name" required>
+      <i class="fa fa-user"></i>
+    </div>
+    <div class="data">
+      <label class="label">Last Name:</label>
+      <input class="search-bar" type="text" name="lastname" id="lastname" placeholder="Enter Last Name" required><i class="fa fa-user"></i>
+    </div>
+      <div class="data">
+      <label class="label">Phone No:</label>
+  
+   <!-- Yeh div select aur input ko aik line mein set rakhega -->
+    <div class="phone-container">
+      <div class="country-code-container">
+        <select  name="country_code" id="country_code" required>
+          <option value="+1">+1 </option>
+          <option value="+92">+92</option>
+          <option value="+44">+44</option>
+          <option value="+91">+91</option>
+          <option value="+61">+61</option>
+          <option value="+81">+81</option>
+          <option value="+49">+49</option>
+          <option value="+33">+33</option>
+          <option value="+39">+39</option>
+          <option value="+55">+55</option>
+          <option value="+7">+7</option>
+        </select>
+      </div>
+        <!-- Add more country codes as needed -->
+         <input class="search-bar" type="tel" name="phoneno" id="phoneno" placeholder="3XX XXXXXXX" pattern="[0-9+\s-]{10,15}" required>
+   </div>
+        <i class="fa fa-phone"></i>
+</div>
+    <div class="data">
+      <label class="label">Gmail:</label>
+       <input class="search-bar" type="email" name="email" id="email" placeholder="Enter Gmail address" required><i class="fa fa-envelope"></i>
+  </div>
+    <div class="data">
+      <label class="label">Password:</label>
+       <input class="search-bar" type="password" name="password" id="password" placeholder="Enter Password" required>
+       <i class="fa fa-lock"></i>
+      </div>
+    <div class="data">
+      <label class="label">Confirm Password:</label>
+      <input class="search-bar" type="password" name="confirmpassword" id="confirmpassword" placeholder="Enter confirm password" required>
+      <i class="fa fa-lock"></i>
+    </div>
+    <button type="submit" value="Sign up" class="sign-button">Sign Up</button>
+  </div>
+  </form>
+  <!-- Add JS File -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
+
+
+

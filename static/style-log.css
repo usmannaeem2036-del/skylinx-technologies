@@ -1,0 +1,207 @@
+.body{
+  background-color: rgb(4, 35, 44);
+  font-family: Arial,Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.container{
+  display:flex; 
+  flex-direction: column;
+  background-color:white;
+  width: 240px;
+  height: 40%;
+  border-radius: 8px;
+  border: none;
+  border-color:rgb(206, 205, 205);
+  border-style: solid;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+}
+.log{
+  color: rgb(75, 75, 212);
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 10px;
+  margin-top:-8px;
+  font-weight: bold;
+  font-size: 45px;
+}
+.mail{
+  font-size:12px;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style:solid ;
+  border-color: rgb(202, 197, 197);
+  padding: 12px 0px 12px 5px;
+}
+.data,
+.data-pass{
+  display: flex;
+  flex-direction: column;
+}
+.data-pass{
+  margin-top:20px;
+}
+.forget{
+  color: rgb(57, 57, 230);
+  margin-top: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-end;
+}
+.login-button{
+  background-color: rgb(75, 75, 212);
+  color:black;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius:15px;
+  border: none;
+  padding:12px 0px 12px 0px;
+  margin:20px 0px 30px 0px;
+  cursor: pointer;
+  transition: background-color 0.15s,
+  color 0.15s;
+  vertical-align:top;
+}
+.login-button:hover{
+    background-color: rgb(100, 100, 197);
+  color:white;
+}
+.login-button:active{
+  opacity: 0.8s;
+  background-color: rgb(75, 75, 212);
+  color:black;
+}
+.fa-envelope,
+.fa-eye {
+  color:lightgrey;
+  display: flex;
+  margin : -22px 0px 0px 210px;
+  max-width: 20px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* Reset and Base Styles */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+} */
+
+/* Form Container */
+/* .form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 24px;
+    text-align: center;
+} */
+
+/* Layout Groups */
+/* .form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 600;
+} */
+
+/* Inputs, Select, and Textarea */
+/* input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333333;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+} */
+
+/* Radios and Checkboxes */
+/* .radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+} */
+
+/* Button Styles */
+/* .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+} */
